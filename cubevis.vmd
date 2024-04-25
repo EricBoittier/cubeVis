@@ -295,8 +295,8 @@ display aodirect 0.500000
 display dof off
 display dof_fnumber 64.000000
 display dof_focaldist 0.700000
-mol new data/error1.cube type cube first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
-mol addfile data/1.cube type cube first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
+mol new data/esp-4.cube type cube first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
+mol addfile data/4.cube type cube first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
 mol representation CPK 0.500000 0.2000000 10.000000 10.000000
 mol color Name
@@ -339,7 +339,7 @@ mol material AOChalky
 mol addrep top
 mol selupdate 1 top 0
 mol colupdate 1 top 0
-mol scaleminmax top 1 -0.01 0.01
+mol scaleminmax top 1 -0.1 0.1
 mol smoothrep top 1 0
 mol drawframes top 1 {now}
 mol clipplane center 0 1 top {0.0 0.0 0.0}
@@ -573,5 +573,5 @@ scale by 0.750000
 display update
 material change ambient AOChalky 0.250000
 mol showrep 0 1 0
-render snapshot data/error1.cube.mol.tga
+render snapshot data/esp-4.cube.mol.tga
 exit
