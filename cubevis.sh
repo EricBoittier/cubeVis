@@ -21,6 +21,17 @@ sed -e  $espfile \
 -e $scalemin \
 -e $scalemax \
 cubevis-template.vmd > cubevis.vmd
-
 # Run vmd with the generated script
 vmd -e cubevis.vmd
+convert $1.tga $1.png
+
+# Format the template file cubevis-template.vmd using sed with alternative delimiter
+sed -e  $espfile \
+-e $densfile \
+-e $scalemin \
+-e $scalemax \
+cubevis-template-mol.vmd > cubevis.vmd
+# Run vmd with the generated script
+vmd -e cubevis.vmd
+convert $1.mol.tga $1.mol.png
+

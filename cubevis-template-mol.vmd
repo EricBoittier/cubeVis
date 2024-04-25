@@ -560,6 +560,9 @@ material change ambient AOChalky 0.850000
 material change diffuse AOChalky 1.000000
 
 display depthcue off
+#display shadows off
+#display depthcue off
+#display ambientocclusion off
 light 1 off
 light 2 off
 light 3 off
@@ -567,7 +570,8 @@ axes location off
 
 display reset view
 scale by 0.750000
-
-render snapshot ESPFILE.tga
-
+display update
+material change ambient AOChalky 0.250000
+mol showrep 0 1 0
+render snapshot ESPFILE.mol.tga
 exit
