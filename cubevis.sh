@@ -23,6 +23,4 @@ sed -e  $espfile \
 cubevis-template.vmd > cubevis.vmd
 
 # Run vmd with the generated script
-#vmd  -e cubevis.vmd
 vmd -e cubevis.vmd
-#'/usr/local/lib/vmd/tachyon_LINUXAMD64' -aasamples 2 -res 2000 2000 molecule.dat -o molecule.tga
