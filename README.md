@@ -2,7 +2,7 @@
 A command line tool for generating 3D visualizations of cube files in VMD.
 
 ## Preqrequisites
-Assumes you have vmd installed and in your PATH.
+Assumes you have VMD installed and in your PATH.
 
 ## Usage
 ```
